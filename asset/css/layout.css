@@ -1,0 +1,308 @@
+@import url(./common.css);
+@import url(./reset.css);
+.header .hd-main{ 
+    height: 48px; display: flex;
+    
+    align-items: center;
+    position: relative;justify-content: space-between;
+}
+.hd-menu img{
+    height: 40px;
+    width: 300px;
+  
+    margin:24px 0;
+    
+}
+
+.bg.on{display: block;}
+.hd-menu.on{
+    display: block;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2
+    ;
+    display: none;
+}
+.hd-menu{ 
+    position: fixed;
+    width: 240px;
+    top: 0; left:0;
+    z-index: 10;
+    display: none;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.hd-menu .hd-menupart p{}
+.hd-menu .hd-menupart{
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 109, 117);
+    margin-top: 20px;
+    margin-right: 16px;
+    margin-left: 16px;
+ 
+
+}
+.hd-menu .hd-menuchat{ 
+    margin-left:-40px;
+    margin-top: 20px;
+    border-top:1px solid rgb(233, 236, 239);
+    border-bottom:1px solid rgb(233, 236, 239);
+    justify-content: center; align-items: center;
+    width:240px; height: 24px; padding:20px 16px 20px 16px;  display: flex;}
+.hd-menu .hd-menuchat img{height: 24px;width: 24px;margin-right: 17px;}
+.hd-menu .hd-menuchat p{ font-size: 15px;
+   
+    font-weight: 500;
+    color: rgb(73, 80, 86);}
+.hd-menu .hd-menuasign{
+    margin-top: 9px;
+    background-color: #2b96ed;;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left:16px;
+    width: 208px;
+    height: 47px;
+    padding:0 32px;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px;
+}
+.hd-menu .hd-menulogin{ 
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left:16px;
+    
+
+    width: 208px;
+    height: 47px;
+    padding:0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #495056;
+    background-color: white;
+    border: 1px solid #ced4da;}
+.search.on{
+    display: block;
+}
+.search{
+    display:none;
+    background:white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;right: 0;
+    z-index: 3;
+
+}
+
+.logo-x:hover{
+    background: #f1f3f5;;
+    
+}
+.search .logo-x{ 
+    border-radius: 5px;
+   
+    margin-left: 12px;
+    margin-top: 12px;
+    display: block; 
+    height: 24px;
+    width: 24px;
+
+}
+    
+.header .hd-main .logo{ position: absolute; 
+    top: 50%;left: 50%;transform: translate(-50%, -50%); }
+.header .hd-main .logo img{height: 20px; width: 92px;}
+.header .hd-main .menu-ic{ padding: 12px 16px;}
+.header .hd-main .menu-ic img{width: 24px;height: 24px;}
+.header .hd-main .search-ic{ padding: 12px 16px;}
+.header .hd-main .search-ic img{height: 24px;width: 24px;}
+.header legend{
+    background: red;
+}
+.header .searchbx{ margin:48px 16px 18px 16px;position: relative; background-color: rgb(241, 243, 245);height: 48px; }
+.header .search .logo-box{ height: 48px;width: 48px; position: absolute; left:0;top: 0; display: flex; justify-content: center; 
+    align-items: center;}
+.header .search fieldset{
+    border: 0;
+    
+}
+.header .search .search-box{ width: 100%;height: 48px;padding:0 16px 0 48px;background: rgb(245, 246, 247);  border-radius: 0; border:none;outline: none;}
+.header .hd-searchbox{margin:10px 16px 18px 16px;position: relative; background:#f5f6f7;height: 48px;}
+.header .hd-searchbox .logo-box{height: 48px;width: 48px; position: absolute; left:0;top: 0; display: flex; justify-content: center; 
+align-items: center;}
+
+/* input box 에 outline=none 일때는 클릭했을때 포커싱되는게 없어지고 또한 input 에다가 border:none 해줘야 함그리고 fieldset에border:0을 주면 그 원래 있던 테두리가 없어짐 */
+.header .hd-searchbox fieldset{border:0}
+.header .hd-searchbox .search-box{width: 100%;height: 48px;padding:0 16px 0 48px;background: rgb(245, 246, 247);  border-radius: 0; border:none;outline: none;}
+
+.footer{padding: 32px 16px; background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(233, 236, 239);}
+.footer .ft-customer .Operation{}
+.footer .ft-customer .Operation strong{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(102, 109, 117);    line-height: 1.5;}
+.footer .ft-customer .Operation p{margin-top: 10px;font-size: 14px;
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+    word-break: break-all;
+    color: rgb(73, 80, 86);
+    }
+.footer .ft-customer .Operation a:hover{box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;}
+.footer .ft-customer .Operation a{
+    margin-top: 16px;
+    color: #495056;
+    border:1px solid #ced4da;
+    display: block;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 9px 8px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    transition: all 0.3s ease 0s;}
+.footer .ft-customer .inform-list{margin-top: 30px;}
+.footer .ft-customer .inform-list .inform-item .inform-nav:hover{background-color:#f5f6f7;}
+.footer .ft-customer .inform-list .inform-item .inform-nav.last{
+    border-bottom: solid 0.5px #dee2e6; 
+
+}
+.footer .ft-customer .inform-list .inform-item .inform-nav.on img{transform:rotate(180deg);}
+.footer .ft-customer .inform-list .inform-item .inform-nav.on img{transition: 0.3s;}
+.footer .ft-customer .inform-list .inform-item .inform-nav{
+    display:flex;
+    width: 100%;
+    height: 56px;
+    padding:16px 0; 
+    justify-content: space-between;
+   
+    border-top: solid 0.5px #dee2e6; } 
+
+.footer .ft-customer .inform-list .inform-item p{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(102, 109, 117);
+}
+.footer .ft-customer .inform-list .inform-item .inform-sub.on{display: block;}
+.footer .ft-customer .inform-list .inform-item .inform-sub a:hover{color:#343a40;}
+.footer .ft-customer .inform-list .inform-item .inform-sub{padding:16px;
+    display: none;
+}
+.footer .ft-customer .inform-list .inform-item .inform-sub li{}
+.footer .ft-customer .inform-list .inform-item .inform-sub li a{ display:flex; line-height: 1.6; color:#343a40 ;height: 52px;align-items:  center; font-size: 14px;
+    color: rgb(102, 109, 117);}
+
+
+
+.footer .ft-companyinform{margin-top: 32px;}
+.footer .ft-companyinform .personal.information{ display: flex; gap: 20px;}
+
+.footer .ft-companyinform .personal.information strong:hover{ background-color:#f5fbff; color:#2b96ed;}
+.footer .ft-companyinform .personal.information p:hover{ background-color:#f5fbff;
+color:#2b96ed;}
+.footer .ft-companyinform .personal.information p{ 
+    transition: all 0.2s ease 0s;
+    border-radius: 4px;
+    padding:6px;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(102, 109, 117);
+    height: 44px;
+}
+.footer .ft-companyinform .personal.information strong{ 
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700; 
+    height: 44px;  
+    padding:6px;
+    color: rgb(102, 109, 117);
+    }
+.footer .ft-companyinform .trade.name{margin:16px 0 24px 0;
+
+}
+.footer .ft-companyinform .trade.name p{   
+    
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    color: rgb(132, 140, 148);
+    line-height: 18px;}
+
+.footer .ft-companyinform select{
+   background: url(../images/footer/ft-earth.svg)no-repeat;
+   background-position: 2px center;
+
+    width: 128px;
+    height: 40px; 
+    justify-content: center; 
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px; 
+    padding:0 26px ;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(132, 140, 148);
+}
+
+
+.footer .ft-companyinform .languagebox .down{width: 14px;height: 14px; color:#343a40;}
+
+
+ .footer .ft-companyinform .language-list.on{ display: block;}
+ .footer .ft-companyinform .language-list{ width: 118px; display: flex;flex-direction: column; align-items: center; display: none;}
+.footer .ft-companyinform .language-list li{ width: 54px;}
+
+.footer .ft-companyinform .language-list .korean{border-radius: 5px 5px 0 0;}
+.footer .ft-companyinform .language-list .english{border-radius:0 0 5px 5px;}
+.footer .ft-companyinform .language-list li a:hover{color:white; background: #4646469c;}
+.footer .ft-companyinform .language-list li a{
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(132, 140, 148);
+width: 100%;} 
+.footer .mark{
+    display: flex; justify-content: space-between;
+    align-items: center;
+    margin-left: -10px;
+}
+.footer .mark .sns{  margin-top: 14px;display: flex; height: 44px; width: 176px; }
+.footer .mark .sns a{ width: 44px; display: flex; align-items: center;justify-content: center;}
+.footer .mark .sns .ft-facebook img{width: 24px;height: 24px; }
+.footer .mark .sns .ft-naver img{width: 24px;height: 24px;}
+.footer .mark .sns .ft-insta img{width: 24px;height: 24px;}
+.footer .mark .sns .ft-youtube img{width: 24px;height: 24px;}
+.footer .mark .ismsp img{ width:56px;height: 40px;}
+.Installation{
+    margin-top: 14px;
+    display: flex;
+  justify-content: space-between;
+}
+.Installation a{display: flex; flex:1;height: 40px;align-items: center; justify-content:center;border: 1px solid rgb(206, 212, 218)}
+.Installation a img{width: 20px;height: 20px; }
+.Installation a p{font-size: 15px; color:#666D75;margin-left: 8px;}
+
