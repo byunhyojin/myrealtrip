@@ -4,38 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>TAQA</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/layout.css">
-
-    <script src="./asset/jq/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
-    <script src="./asset/jq/myreal.js"></script>
-
+    <script src="./asset/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./asset/js/myreal.js"></script>
 </head>
 
 <body>
-
-
     <div class="wrapper">
-
-
-
         <header class="header">
-
             <div class="bg"></div>
-
             <div class="hd-main">
                 <h1 class="logo"><a href=""><img src="./asset/images/header/hd-logo.svg" alt="마이리얼트립로고"></a></h1>
                 <a href="" class="menu-ic"><img src="./asset/images/header/hd-menu.svg" alt=""></a>
                 <a href="" class="search-ic"><img src="./asset/images/header/hd-search.svg" alt=""></a>
-
             </div>
             <div class="hd-searchbox">
                 <h2 class="blind">검색창</h2>
-
                 <div class="logo-box">
                     <img src="./asset/images/search-icon.svg" alt="" class="search-icon">
                 </div>
@@ -45,18 +33,13 @@
                         <input type="text" class="search-box">
                     </fieldset>
                 </form>
-
-
             </div>
-
             <div class="search">
                 <a class="logo-x">
                     <img src="./asset/images/header/hd-x.svg" alt="">
                 </a>
                 <div class="searchbx">
-
-
-                    <a href="">
+                    <div href="">
                         <div class="logo-box">
                             <img src="./asset/images/search-icon.svg" alt="" class="search-icon">
                         </div>
@@ -66,12 +49,9 @@
                                 <input type="text" class="search-box">
                             </fieldset>
                         </form>
-                    </a>
+                    </div>
                 </div>
-
             </div>
-
-
             <div class="hd-menu">
                 <a href="" class="hd-logo"><img src="./asset/images/menu-logo.svg" alt=""></a>
                 <a href="" class="hd-menulogin">
@@ -88,24 +68,17 @@
                     <p>파트너 로그인</p>
                 </a>
             </div>
-
-
         </header>
-
-
         <main class="container">
-
             <section class="sc-maincity">
                 <h2 class="headline">여행이 돌아왔어요!</h2>
                 <div class="swiper maincity">
                     <ul class="swiper-wrapper city-items">
                         <li class="swiper-slide city-list">
-
                             <a href="">
                                 <img src="./asset/images/comback/cb-paris.jpg" alt="">
                                 <strong>파리</strong>
                             </a>
-
                         </li>
                         <li class="swiper-slide city-list">
                             <a href="">
@@ -152,7 +125,6 @@
                     </ul>
                 </div>
             </section>
-
             <section class="sc-nav">
                 <h2 class="blind">제공상품리스트</h2>
                 <div class="nav-wrapper">
@@ -299,9 +271,7 @@
                     </ul>
 
                 </div>
-
             </section>
-
             <section class="sc-adv">
                 <h2 class="blind">광고</h2>
                 <div class="swiper ad-slide">
@@ -324,14 +294,12 @@
                 </div>
             </section>
 
-
-
+            <!-- 데이터 -->
             <section class="sc-compare">
                 <h2 class="headline">함께 본 상품과 비교해보세요</h2>
                 <div class="swiper compare">
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div class="swiper-wrapper" id="travellist">
+                        <!-- <div class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-amusement.jpg" alt="" class="main">
@@ -375,7 +343,7 @@
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-kansai.jpg" alt="" class="main">
-                                    <img src="./asset/images/bs-love.svg" alt="" class="love">
+
                                 </div>
                                 <div class="text-box">
                                     <p class="section">여행편의 · 오사카</p>
@@ -389,7 +357,7 @@
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-1daypass.jpg" alt="" class="main">
                                     <img src="./asset/images/bs-love.svg" alt="" class="love">
-                                    <span class="hotsale">무료취소</span>
+
                                 </div>
                                 <div class="text-box">
                                     <p class="section">여행편의 · 오사카</p>
@@ -402,7 +370,7 @@
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-2days.jpg" alt="" class="main">
-                                    <img src="./asset/images/bs-love.svg" alt="" class="love">
+
                                 </div>
                                 <div class="text-box">
                                     <p class="section">티켓/패스 · 오사카</p>
@@ -415,7 +383,7 @@
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-boat.jpg" alt="" class="main">
-                                    <img src="./asset/images/bs-love.svg" alt="" class="love">
+
                                 </div>
                                 <div class="text-box">
                                     <p class="section">티켓/패스 · 오사카</p>
@@ -428,7 +396,7 @@
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/compare/cp-amusement.jpg" alt="" class="main">
-                                    <img src="./asset/images/bs-love.svg" alt="" class="love">
+
                                 </div>
                                 <div class="text-box">
                                     <p class="section">티켓/패스 · 오사카</p>
@@ -436,21 +404,15 @@
                                     <p class="price">39,200원</p>
                                 </div>
                             </a>
-                        </div>
-
+                        </div> -->
                     </div>
                 </div>
             </section>
-
-
-
-
             <section class="sc-compare">
                 <h2 class="headline">실시간 베스트 상품</h2>
                 <div class="swiper compare">
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div class="swiper-wrapper" id="travellist1">
+                        <!-- <div class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/images/best/be-univer.jpg" alt="" class="main">
@@ -571,15 +533,13 @@
                                     <p class="price">21,755원</p>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline"> 오사카 관심 급상승 상품</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide">
                             <a href="">
@@ -704,7 +664,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline">오사카 교통패스 베스트 셀러</h2>
                 <div class="swiper compare">
@@ -833,7 +792,6 @@
             <section class="sc-compare">
                 <h2 class="headline">오사카 유심/와이파이 베스트 셀러</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide">
                             <a href="">
@@ -974,7 +932,6 @@
             <section class="sc-compare">
                 <h2 class="headline">최근 본 상품과 비슷한 상품</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -1093,16 +1050,12 @@
                                 </div>
                             </a>
                         </div>
-
-
                     </div>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline">전국 핫플 최저가 🎠</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -1347,7 +1300,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline">여행에 진심인 사람들이 만든 여행🛫</h2>
                 <div class="guide">
@@ -1364,13 +1316,10 @@
                     </a>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline">새로운 상품을 만나보세요</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide ">
                             <a href="">
                                 <div class="img-box">
@@ -1427,17 +1376,12 @@
                                 </div>
                             </a>
                         </div>
-
-
-
                     </div>
                 </div>
             </section>
-
             <section class="sc-compare">
                 <h2 class="headline">제주 필수 티켓 🎫</h2>
                 <div class="swiper compare">
-
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -1557,12 +1501,9 @@
                                 </div>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </section>
-
-
             <section class="sc-compare">
                 <h2 class="headline">제주 교통의 모든 것 🚘</h2>
                 <div class="swiper compare">
@@ -1764,15 +1705,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
             <section class="sc-inform">
                 <h2 class="headline">마이리얼트립의 여행 정보</h2>
                 <div class="inform-box">
@@ -1794,15 +1726,8 @@
 
                 </div>
             </section>
-
-
         </main>
-
-
-
-
         <footer class="footer">
-
             <div class="ft-customer">
                 <div class="Operation">
                     <strong>고객지원실 운영안내</strong>
@@ -1814,7 +1739,6 @@
                         유선상담 1670-8208
                     </p>
                     <a href="">1:1 채팅상담</a>
-
                 </div>
                 <ul class="inform-list">
                     <li class="inform-item">
@@ -1848,13 +1772,10 @@
                         <ul class="inform-sub">
                             <li><a href="">공지사항/FAQ</a></li>
                             <li><a href="">최저가 보장제</a></li>
-
                         </ul>
                     </li>
                 </ul>
-
             </div>
-
             <div class="ft-companyinform">
                 <div class="personal information">
                     <a href="">
@@ -1864,7 +1785,6 @@
                     <a href="">
                         <p>취소 및 환불정책</p>
                     </a>
-
                 </div>
                 <div class="trade name">
                     <p>
@@ -1880,8 +1800,6 @@
                         마이리얼트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 대하여 책임을 지지않습니다.<br>
                         부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.
                     </p>
-
-
                 </div>
                 <div class="language">
                     <select name="" id="">
@@ -1889,20 +1807,16 @@
                         <option value="" class="english">english</option>
                     </select>
                 </div>
-
                 <div class="mark">
                     <div class="sns">
                         <a href="" class="ft-facebook"><img src="./asset/images/footer/ft-fb.svg" alt=""></a>
                         <a href="" class="ft-naver"><img src="./asset/images/footer/ft-nv.svg" alt=""></a>
                         <a href="" class="ft-insta"><img src="./asset/images/footer/ft-insta.svg" alt=""></a>
                         <a href="" class="ft-youtube"><img src="./asset/images/footer/ft-youtube.svg" alt=""></a>
-
                     </div>
                     <a href="" class="ismsp">
                         <img src="./asset/images/footer/ft-is.png" alt="">
                     </a>
-
-
                 </div>
                 <div class="Installation">
                     <a href="" class="app-store">
@@ -1916,15 +1830,9 @@
 
 
                 </div>
-
             </div>
-
         </footer>
-
     </div>
-
-
-
 </body>
 
 </html>
